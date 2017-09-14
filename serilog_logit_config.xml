@@ -1,0 +1,11 @@
+<configuration>
+  <appSettings>
+    <!-- Level of logging -->
+    <add key="serilog:minimum-level" value="Verbose" />
+    <!-- Use the TCP Network sink -->
+    <add key="serilog:using:TCPSink" value="Serilog.Sinks.Network" />
+    <!-- Your logstash configuration -->
+    <add key="serilog:write-to:TCPSink.uri" value="8acc963d-f7fb-4806-858f-3ed943b1588f-ls.logit.io" />
+    <add key="serilog:write-to:TCPSink.port" value="17787" />
+  </appSettings>
+</configuration>
